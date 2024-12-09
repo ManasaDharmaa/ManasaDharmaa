@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manasa Dharma</title>
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+
+ 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+      
+      
+    <style>
+      * {
+        font-family: "Times New Roman", Times, serif;
+      }
+      body {
+        background-color: #f8f9fa;
+      }
+
+      .whatsapp{
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        z-index: 100;
+      }
+      .navbar-nav .nav-link {
+        color: black;
+      }
+      .navbar-nav .nav-link:hover {
+        color: white;
+      }
+      .logo {
+        color: #023047;
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-right: 20px;
+        text-decoration: none;
+      }
+      .logo:hover {
+        color: white;
+        text-shadow: 0 0 25px black, 0 0 50px rgb(204, 232, 241);
+      }
+      .contact {
+        padding: 9px;
+        background-color: rgb(4, 85, 112);
+        color: white;
+        border: 3px solid transparent;
+        border-radius: 8px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-left: 20px;
+        align-self: center;
+        transition: 0.3s ease;
+      }
+      .contact:hover {
+        background-color: #219ebc;
+        box-shadow: 0 0 25px #219ebc;
+        color: black;
+      }
+     
+      .home {
+        padding: 100px 0;
+        background-color: #f8f9fa;
+      }
+      .image-container {
+        text-align: center;
+      }
+      .text-container {
+        margin: 20px;
+        text-align: center;
+      }
+      .text-container h1 {
+        font-size: 2.5em;
+        margin: 10px 0;
+      }
+      .text-container h2 {
+        font-size: 1.8em;
+        margin: 10px 0;
+      }
+
+      .text-container p {
+        margin: 20px 0;
+        font-size: 1.1em;
+        color: black;
+      }
+      .download-btn {
+        background-color: rgb(4, 85, 112);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 1em;
+      }
+      .download-btn:hover {
+        background-color: #219ebc;
+        box-shadow: 0 0 25px #219ebc;
+        color: black;
+      }
+
+
+      .experience-section {
+       
+      background-color: #f8f9fa;
+      min-height: 150vh; 
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center; 
+    }
+
+    .experience-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: rgb(4, 85, 112); 
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .experience-card {
+      border: none;
+      border-radius: 15px;
+      background: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .experience-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .experience-icon {
+      font-size: 50px;
+      color: rgb(4, 85, 112); 
+      margin-bottom: 20px;
+    }
+
+    .experience-title-card {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: rgb(4, 85, 112);
+      margin-bottom: 15px;
+    }
+
+    .experience-subtitle {
+      font-size: 1rem;
+      color: black; 
+      margin-bottom: 15px;
+    }
+
+    .experience-description {
+      font-size: 0.95rem;
+      color: black; 
+    }
+
+    .badge-custom {
+      background-color: rgb(4, 85, 112); 
+      color: white;
+      font-size: 0.8rem;
+      padding: 5px 10px;
+      border-radius: 15px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+
+    .tool-icon {
+            width: 100px; 
+            height: auto;
+            margin: 15px; 
+        }
+
+
+
+      .education-section {
+        padding: 50px 0;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        color: black;
+      }
+
+      .section-title span {
+        color: rgb(4, 85, 112);
+      }
+
+
+
+      .timeline {
+        position: relative;
+        margin: 0 auto;
+        padding: 0;
+        max-width: 800px;
+        list-style: none;
+      }
+
+      .timeline::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 4px;
+        background: #4a4a4a;
+        transform: translateX(-50%);
+      }
+
+      .timeline-item {
+        position: relative;
+        margin: 20px 0;
+        display: flex;
+      }
+
+      .timeline-item:nth-child(odd) {
+        flex-direction: row-reverse;
+      }
+
+      .timeline-item-content {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 45%;
+      }
+
+      .timeline-item-content h4 {
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+        margin-bottom: 10px;
+      }
+
+      .timeline-item-content h5 {
+        font-size: 16px;
+        color: rgb(4, 85, 112);
+        margin-bottom: 10px;
+      }
+
+      .timeline-item-content p {
+        font-size: 14px;
+        color: black;
+        margin: 0;
+      }
+
+      .timeline-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 60px;
+        height: 60px;
+        background: rgb(4, 85, 112);
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+      }
+
+      .timeline-item:nth-child(2) .timeline-icon {
+        background: rgb(4, 85, 112);
+      }
+
+      .timeline-item:nth-child(3) .timeline-icon {
+        background: rgb(4, 85, 112);
+      }
+
+      .project-section {
+        padding: 60px 0;
+        background: #edf6f9;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        color: #023047;
+        text-transform: uppercase;
+      }
+
+      .section-title span {
+        color: #219ebc;
+      }
+
+      .project-card {
+        background: white;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
+
+      .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .project-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .project-card-body {
+        padding: 20px;
+      }
+
+      .project-card h5 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #023047;
+        margin-bottom: 10px;
+      }
+
+      .project-card p {
+        font-size: 14px;
+        color: black;
+        margin-bottom: 15px;
+      }
+
+      .btn-project {
+        background-color: #219ebc;
+        color: black;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 5px;
+        text-transform: uppercase;
+      }
+
+      .btn-project:hover {
+        background-color: #023047;
+        color: white;
+      }
+
+      .technical-summary {
+            padding: 4em 0;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 2em;
+        }
+
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            margin-bottom: 2em;
+        }
+
+        .icon img {
+            width: 250;
+            height: 250;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .icon img:hover {
+            transform: scale(1.1);
+        }
+
+        
+        .summary {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px black;
+            padding: 2em;
+            text-align: left;
+            margin-top: 2em;
+        }
+
+        h3 {
+            color: #219ebc;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        
+
+
+
+        .footer {
+         background-color: black; 
+        }
+
+        .footer a {
+         transition: transform 0.3s ease-in-out;
+        }
+
+         .footer a:hover {
+        transform: scale(1.2); 
+        }
+         .footer p {
+         margin-top: 20px;
+         font-size: 0.9rem;
+         }
+         .text{
+          color: white;
+         }
+         .text:hover{
+          color: #219ebc;
+         }
+
+         .contact-container{
+          background-color: #219ebc;
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+         }
+         .contact-left{
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          gap: 20px;
+         }
+         .contact-left-title h2{
+          font-weight: 600;
+          color: #023047;
+          font-size: 40px;
+          margin-bottom: 5px;
+         }
+         .contact-left-title hr{
+
+          border: none;
+          width: 120px;
+          height: 5px;
+          background-color: black;
+          border-radius: 10px;
+          margin-bottom: 20px;
+         }
+         .contact-inputs{
+          width: 400px;
+          height: 50px;
+          border: none;
+          outline: none;
+          padding-left: 25px;
+          font-weight: 500;
+          color: black;
+          border-radius: 50px;
+         }
+         .contact-left textarea{
+          height: 140px;
+          padding-top: 15px;
+          border-radius: 20px;
+         }
+         .contact-inputs:focus{
+          border: 2px solid #023047;
+         }
+         .contact-inputs::placeholder{
+          color: black;
+         }
+         .contact-left button{
+          display: flex;
+          align-items: center;
+          padding: 15px 30px;
+          font-size: 16px;
+          font-weight: bold;
+          color: black;
+          gap: 10px;
+          border: none;
+          border-radius: 50px;
+          background: linear-gradient(270deg, #225561, #023047);
+         }
+         .contact-right img{
+          width: 500px;
+         }
+         @media(max-width:800px){
+          .contact-inputs{
+            width: 80vw;
+          }
+          .contact-right{
+            display: none;
+          }
+         }
+
+         .movement{
+          color: #023047;
+          font-weight: bold;
+         }
+
+
+         
+
+    </style>
+    <script>
+ 
+      const timelineItems = document.querySelectorAll(".timeline-item");
+
+      
+      function showTimeline() {
+        let delay = 0;
+        timelineItems.forEach((item) => {
+          setTimeout(() => {
+            item.classList.add("visible");
+          }, delay);
+          delay += 500; 
+        });
+      }
+
+     
+      window.onload = showTimeline;
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top" style ="background-color: #219ebc">
+      <div class="container-fluid">
+        <a href="#home" class="logo">Manasa D</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse header" id="navbarNav">
+          <ul class="navbar-nav mx-auto" style="font-weight: bold">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience-section">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#technical-summary">Technical Summary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tool&IDE">IDE & Tools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education-section">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project-section">Project</a>
+            </li>
+            
+          </ul>
+          <a href="#contact-container" class="contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <a href="https://api.whatsapp.com/send?phone=+919353247128&text=Hello%20Manasa%20"><img src="./photos/whatsapp.webp" class="whatsapp"></a>
+    <section class="home" id="home">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center text-lg-start">
+            <div class="text-container">
+              <h3 style="color: black;">Welcome!</h3>
+              <h3 style="color: black;"> I’m
+                <span style=" color: #023047; font-size: 40px; ">Manasa D</span>
+              </h3>
+              <h2>And I'm a <span  class="movement"></span></h2>
+              <p style="text-align: justify;">
+                "To secure a challenging role as a Java Web Developer, where I
+                can leverage my skills in Java, Spring Framework, and JDBC to
+                design and develop efficient web applications. I aim to
+                contribute to a forward-thinking team, continuously enhance my
+                technical skills, and deliver impactful solutions that meet both
+                business and user needs."
+              </p>
+              <a href="./photos/Manasa D, Full Stack Java Developer.pdf" class="btn download-btn"
+                >Download CV</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-6 image-container">
+            <img
+              src="./photos/pic.jpeg"
+              alt="Manasa D"
+              class="img-fluid rounded"
+              style="max-width: 200px; border-radius: 50%;"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var typed = new Typed(".movement", {
+        strings: ["Frontend Developer", "Backend Developer", "Full Stack Java Developer"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop: true
+      });
+    </script>
+
+    <section class="experience-section" id="experience-section">
+      <h1 class="section-title">Exper<span>ience</span></h1>
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6">
+            <div class="experience-card">
+              <div class="experience-icon">
+               <img src="./photos/xworkz.jpeg" alt="">
+              </div>
+              <h4 class="experience-title-card">Full Stack Development Training</h4>
+              <h6 class="experience-subtitle">X-workz, Rajajinagar, Bangalore</h6>
+              <p class="experience-description" style="text-align: justify;">
+                Currently undergoing training with a focus on full stack development using Java technologies.
+                The program emphasizes building web applications, mastering frontend and backend technologies,
+                and understanding software development best practices.
+              </p>
+              <span class="badge-custom">Fresher</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+    <section class="technical-summary" id="technical-summary">
+      <div class="container">
+          <h2 class="section-title">TECHNICAL <span>SUMMARY</span></h2>
+
+          <!-- Icon Section -->
+          <div class="icon-container">
+              <a data-bs-toggle="collapse" href="#java-summary" role="button" aria-expanded="false" aria-controls="java-summary">
+                  <img src="./photos/java.png" alt="Java Symbol" class="img-fluid" style="height: 100px; width: auto;"><br>
+                  <button class="btn download-btn">Click Me</button>
+              </a>
+              <a data-bs-toggle="collapse" href="#html-summary" role="button" aria-expanded="false" aria-controls="html-summary">
+                  <img src="./photos/hm.webp" alt="HTML Symbol" class="img-fluid" style="height: 100px; width: auto;"><br>
+                  <button class="btn download-btn">Click Me</button>
+              </a>
+              <a data-bs-toggle="collapse" href="#css-summary" role="button" aria-expanded="false" aria-controls="css-summary">
+                  <img src="./photos/CSS.png" alt="CSS Symbol" class="img-fluid" style="height: 100px; width: auto;"><br>
+                  <button class="btn download-btn">Click Me</button>
+              </a>
+              <a data-bs-toggle="collapse" href="#sql-summary" role="button" aria-expanded="false" aria-controls="sql-summary">
+                <img src="./photos/mysql.png" alt="sql Symbol" class="img-fluid" style="height: 100px; width: auto;"><br>
+                <button class="btn download-btn">Click Me</button>
+            </a>
+          </div>
+
+          <!-- Summary Content -->
+          <div class="collapse" id="java-summary">
+              <div class="summary">
+                  <h3>Java</h3>
+                  <ul>
+                     <li>Proficient in Java features</li>
+                     <li>Strong grasp of OOP concepts</li>
+                     <li>Skilled in Collections framework</li>
+                     <li>Expertise in handling Exceptions</li>
+                     <li>Experience with Maps and Lambdas</li>
+                     <li>Knowledge of Servlets and methods</li>
+                     <li>Proficient in using Constructors</li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="collapse" id="html-summary">
+              <div class="summary">
+                  <h3>HTML</h3>
+                  <ul></ul>
+                      <li>Headings, Paragraphs, Text Formatting, Lists</li>
+                      <li>Links, Image Tag, Tables</li>
+                      <li>Forms, Semantic Elements</li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="collapse" id="css-summary">
+              <div class="summary">
+                  <h3>CSS</h3>
+                  <ul> 
+                      <li>Selectors, Box Model, Box Sizing</li>
+                      <li>Units, Display Properties, Positioning, Font Styles and Weight</li>
+                      <li>Backgrounds, Borders and Shadows</li>
+                  </ul>
+              </div>
+          </div>
+        <div class="collapse" id="sql-summary">
+          <div class="summary">
+              <h3>SQL</h3>
+              <ul> 
+                  <li>Expertise in DDL/DML operations.</li>
+                  <li>Skilled in create/update queries.</li>
+                  <li>Experience with data insertion.</li>
+              </ul>
+          </div>
+      </div>
+      </div>
+  </section>
+
+
+
+
+  <div class="container" style="background-color: white; min-height: 100vh;" id="tool&IDE">
+    <h2 class="section-title" style="margin: 130px;">IDE <span style="color: black;">&</span> <span> Tools</span></h2>
+    <div class="row justify-content-center text-center">
+        
+        <!-- GitHub -->
+        <div class="col-6 col-md-4 col-lg-3">
+            <img src="./photos/github.svg" alt="GitHub" class="tool-icon">
+            <p>GitHub</p>
+        </div>
+        
+        <!-- Visual Studio -->
+        <div class="col-6 col-md-4 col-lg-3">
+            <img src="./photos/Visual_Studio.png" alt="Visual Studio" class="tool-icon">
+            <p>Visual Studio</p>
+        </div>
+
+        <!-- Eclipse -->
+        <div class="col-6 col-md-4 col-lg-3">
+            <img src="./photos/eclipse.webp" alt="Eclipse" class="tool-icon">
+            <p>Eclipse</p>
+        </div>
+        
+        <!-- IntelliJ -->
+        <div class="col-6 col-md-4 col-lg-3">
+            <img src="./photos/IntelliJ.png" alt="IntelliJ" class="tool-icon">
+            <p>IntelliJ</p>
+        </div>
+        
+        <!-- EmailJS -->
+        <div class="col-6 col-md-4 col-lg-3">
+            <img src="./photos/emailjs.png" alt="EmailJS" class="tool-icon">
+            <p>EmailJS</p>
+        </div>
+        
+        <!-- Tomcat -->
+        <div class="col-6 col-md-4 col-lg-3">
+            <img src="./photos/Tomcat.png" alt="Tomcat" class="tool-icon">
+            <p>Tomcat</p>
+        </div>
+        
+        <!-- Notepad++ -->
+        <div class="col-6 col-md-4 col-lg-3">
+            <img src="./photos/notepad++.svg" alt="Notepad++" class="tool-icon">
+            <p>Notepad++</p>
+        </div>
+        
+        <!-- MySQL Workbench -->
+        <div class="col-6 col-md-4 col-lg-3">
+            <img src="./photos/mysql.png" alt="MySQL Workbench" class="tool-icon">
+            <p>MySQL Workbench</p>
+        </div>
+
+    </div>
+</div>
+
+
+    <section class="education-section" id="education-section">
+      <h1 class="section-title">EDUC<span>ATION</span></h1>
+      <ul class="timeline">
+        <!-- B.E -->
+        <li class="timeline-item">
+          <div class="timeline-icon">2024</div>
+          <div class="timeline-item-content">
+            <h4>B.E</h4>
+            <h5>Malnad College of Engineering</h5>
+            <p>Visvesvaraya Technological University, Belgam</p>
+            <p>
+              Focused on Information Science and Engineering, fostering
+              innovation and research.
+            </p>
+          </div>
+        </li>
+        <!-- Diploma -->
+        <li class="timeline-item">
+          <div class="timeline-icon">2021</div>
+          <div class="timeline-item-content">
+            <h4>Diploma</h4>
+            <h5>Smt. L V Polytechnic</h5>
+            <p>Board of Technical Education</p>
+            <p>
+              Practical training in Computer Science with an emphasis on
+              programming skills.
+            </p>
+          </div>
+        </li>
+        <!-- SSLC -->
+        <li class="timeline-item">
+          <div class="timeline-icon">2017</div>
+          <div class="timeline-item-content">
+            <h4>SSLC</h4>
+            <h5>Sri Lakshmi Convent & Shree Ranganatha High School</h5>
+            <p>Karnataka Secondary Education Examination Board</p>
+            <p>
+              Strong academic foundation with a focus on Kannada language
+              proficiency.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="project-section" id="project-section">
+      <div class="container">
+        <h2 class="section-title">Pro<span>jects</span></h2>
+        <div class="row g-4">
+          <!-- Project 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card">
+              <img src="./photos/coffee.avif" alt="Coffee Shop Management" />
+              <div class="project-card-body">
+                <h5>Coffee Shop Management System</h5>
+                <p><strong>Role:</strong> Team Leader</p>
+                <p><strong>Duration:</strong> 3 Months</p>
+                <p>
+                  Designed to maintain orders and manage operations for cafés,
+                  offering a streamlined experience.
+                </p>
+                <a href="https://github.com/ManasaDharmaa/Cafe" class="btn btn-project">See Project</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card">
+              <img src="./photos/bike.jpg" alt="Bike Rental Management" />
+              <div class="project-card-body">
+                <h5>Bike Rental Management System</h5>
+                <p><strong>Role:</strong> Team Leader</p>
+                <p><strong>Duration:</strong> 3 Months</p>
+                <p>
+                  An online system for renting bikes easily, with user-friendly
+                  interfaces for admins and customers.
+                </p>
+                <a href="https://github.com/ManasaDharmaa/Bike" class="btn btn-project">See Project</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card">
+              <img src="./photos/face.jpg" alt="Face Recognition for Voting" />
+              <div class="project-card-body">
+                <h5>Face Recognition for Voting System</h5>
+                <p><strong>Role:</strong> Team Member</p>
+                <p><strong>Duration:</strong> 6 Months</p>
+                <p>
+                  A system that identifies individuals using facial recognition,
+                  improving efficiency in voting systems.
+                </p>
+                <a href="https://github.com/ManasaDharmaa/FaceMask" class="btn btn-project">See Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <div class="contact-container" id="contact-container">
+      <form action=""  id="contact-form" class="contact-left">
+          <div class="contact-left-title">
+              <h2>Get in touch</h2>
+              <hr>
+          </div>
+          <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+          <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+          <input type="text" name="number" placeholder="Your Number" class="contact-inputs" required>
+          <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+          <button class='submit' type="submit">Submit</button>
+      </form>
+      <script>
+        function onClick(e) {
+          e.preventDefault();
+          grecaptcha.enterprise.ready(async () => {
+            const token = await grecaptcha.enterprise.execute('6Lda_JAqAAAAAD_0zxtCyJ4gjN-Z7ce8wU2IkWcu', {action: 'LOGIN'});
+          });
+        }
+      </script>
+     
+      <div class="contact-right">
+          <img src="./photos/right_img.png" alt="">
+      </div>
+  </div>
+  
+
+  <script>
+    $(document).ready(function() {
+        $('#contact-form').on('submit', function(event) {
+            event.preventDefault(); 
+            var formData = new FormData(this);
+            formData.append('service_id', 'service_ma0j1ur');
+            formData.append('template_id', 'template_6c9zyg5');
+            formData.append('user_id', '1vlmmaSjhH_A9FxN2');
+            $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
+                type: 'POST',
+                data: formData,
+                contentType: false, 
+                processData: false 
+            }).done(function() {
+                alert('Your mail is sent!');
+            }).fail(function(error) {
+                alert('Oops... ' + JSON.stringify(error));
+            });
+        });
+    });
+    </script>
+    
+
+
+ 
+
+  <footer class="footer bg-dark text-white py-4" >
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12">
+          <h3 class="mb-4">Connect with Me</h3>
+          <div class="d-flex justify-content-center gap-3">
+            <!--location-->
+             <a href="https://maps.app.goo.gl/Ua3S54NmrbNJEuZ69" class="text" target="_blank" >
+              <i class="bi bi-house-door-fill" style="font-size: 1.5rem;"></i>
+             </a>
+            <!-- Phone -->
+            <a href="tel:+919353247128" target="_blank" class="text">
+              <i class="bi bi-phone-fill" style="font-size: 1.5rem;"></i>
+            </a>
+            <!-- Email -->
+            <a href="mailto:manasad453@gmail.com" target="_blank" class="text">
+              <i class="bi bi-envelope-at-fill" style="font-size: 1.5rem;"></i>
+            </a>
+            <!-- GitHub -->
+            <a href="https://github.com/ManasaDharmaa" target="_blank" class="text">
+              <i class="bi bi-github" style="font-size: 1.5rem;"></i>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/manasa-dharma-178762220?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="text">
+              <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
+            </a>
+          </div>
+          <p class="mt-4">&copy; 2024 Manasa Dharma. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+ 
+
+ 
+
+
+  
+  </body>
+</html>
+
+
+AIzaSyDa0C6swftDmbTVwIgwF-jQXgJ0f6srDf0
